@@ -2,8 +2,15 @@
 
 2 生成公钥私钥
 ssh-keygen -t rsa -C "yourAccount@qq.com"
+
 3 在项目文件夹下输入git init初始化git仓库
+4 在
+
 5 git status
 6 上传到github的本地仓库
 		git add +文件名
 		git add .
+		
+		git config --global
+7 提交的文件的描述 	git commit -m "xxxx"
+ 

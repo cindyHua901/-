@@ -68,6 +68,19 @@ $(".page4-ligthoff").click(function(){
 	$(".page4-ligthonbg").fadeIn("slow");
 	
 })
+
+
+$(".musicBtn").click(function(){
+	var music=$("#music")[0];
+//	document.getElementById("#music")
+	if(music.paused){
+		music.play();
+		$(this).attr("src","img/musicBtn.png");
+	}else{
+		music.pause();
+		$(this).attr("src","img/musicBtnOff.png");
+	}
+})
 //等文件完成之后再执行js代码
 //$(document).ready(function(){
 //	
