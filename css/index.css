@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.content{
+	position: absolute;
+	/*切换页面要改变top值*/
+	/*top: -200%;*/
+}
+.page{
+	/*相对定位*/
+	position: relative;
+}
+.page1{
+	background:#00ccff;
+	
+}
+.page1-Buiding{
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	display: none;
+}
+.page1-Elements{
+	width: 100%;
+	height: 100%;
+}
+.page1-Cloud{
+	width: 90%;
+	height: 90%;
+}
+.page1-Fligth{
+	width: 0;
+	/*height: 30%;*/
+	bottom: 20%;
+	left:10%;
+	animation: flight 3S linear infinite;
+}
+@keyframes flight{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
+.page1-Flowers01{
+	top:15%;
+	left: 9%;
+	animation: rotate 3s linear infinite;
+}
+.page1-Flowers02{
+	top: 25%;
+	right: 28%;
+	//z-index越高,越在上面
+	z-index:1;
+	animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(30deg);}
+	50%{transform: rotate(0deg);}
+	75%{transform: rotate(-30deg);}
+	90%{transform: rotate(0deg);}
+}
+.page1-Txt{
+	width: 65%;
+	height: 25%;
+	top: 10%;
+	left:15%
+}
+.page1-Starts{
+	width:100% ;
+	animation: zooming 2s linear infinite;
+}
+
+@keyframes zooming{
+	0%{transform: scale(0.9);}
+	50%{transform: scale(1);}
+	100%{transform: scale(0.9);}
+}
+img{
+	position: absolute;
+}
+.page2{
+	background: aquamarine;
+}
+.page2-bg{
+	background: url(../img/wasBg.jpg);
+	width: 100%;
+	height: 100%;
+}
+.page2-farm{
+	width: 70%;
+	height: 15%;
+	top:20%;
+	right: 0;
+	display: none;
+
+}
+.page2-it{
+	width: 70%;
+	bottom: 40%;
+	right: 0;
+	height: 15%;
+	display: none;
+
+}
+.page2-star{
+	width: 70%;
+	bottom: 60%;
+	height: 20%;
+	right: 0;
+	display: none;
+}
+.page3{
+	/*background: blue;*/
+}
+.page3-earlybg{
+	width:100%;
+	height: 100%;
+}
+.page3-bus{
+	width:65%;
+	bottom: 5%;
+	z-index: 2;
+}
+.page3-busAvatar{
+	width: 30%;
+	right: 5%;
+	bottom: 10%;
+	z-index:2;
+}
+.page3-busstation{
+	width: 100%;
+	height:52%;
+	bottom: 0;
+	z-index: 1;
+}
+.page3-bustitle{
+	width: 35%;
+	top:20%;
+    left: 0;
+    height: 8%;
+    z-index: 2;
+    display: none;
+}
+.page3-earlytitle{
+	width: 35%;
+	top:0;
+    left: 0;
+    height: 8%;
+    z-index: 2;
+    display: none;
+}
+.page3-myteamAvatar{
+	width: 10%;
+	height: 10%;
+	right:23%;
+	top:32%;	
+	display: none;
+}
+.page3-myteamspace{
+	width:0px;
+	height: 30%;
+	top: 20%;
+	left:5%;
+}
+.page3-myteamwall{
+	right: 0;
+    bottom: 0;
+    height: 60%;
+    	display: none;
+}
+.page3-myteamwhere{
+	left: 5%;
+    bottom: 5%;
+	width:0px;
+}
+
+.page4{
+	background: wheat;
+}
+.page4-clickGuide{
+	width: 48%;
+    height: 3%;
+    z-index: 1;
+    top: 40%;
+    left: 18%;
+}
+.page4-ligthoff{
+	left: 5%;
+	bottom: 5%;
+	z-index: 1;
+}
+.page4-ligthoffbg{
+	width:100%;
+	height: 100%;
+}
+.page4-lastbustitle{
+	z-index: 1;
+    right: 0;
+    top: 15%;
+	z-index: 1;
+}
+.page4-ligthonbg{
+	width:100%;
+	height: 100%;
+	display: none;
+}
+.page4-ligthon{
+	left: 5%;
+	bottom: 5%;
+	z-index: 1;
+	display: none;
+}
